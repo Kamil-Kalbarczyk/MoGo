@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+}
+
+.header__container {
+  background: linear-gradient(0deg, rgb(242, 218, 138) 0%, rgb(231, 129, 129) 100%);
+}/*# sourceMappingURL=style.css.map */

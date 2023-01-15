@@ -62,6 +62,14 @@
   border-color: orange;
 }
 
+@media (max-width: 760px) {
+  .header__tittle-small {
+    font-size: 20px;
+  }
+  .header__tittle-big {
+    font-size: 56px;
+  }
+}
 .nav {
   width: 100%;
   max-width: 1200px;

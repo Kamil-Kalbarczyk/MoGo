@@ -1,0 +1,41 @@
+.people-section {
+  @include size-element;
+  padding: 20px 10px;
+
+  &__description {
+    padding: 20px 0;
+    font-family: $second-font-family;
+    color: silver;
+    text-align: center;
+  }
+
+  &__workers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__worker-img-container {
+    width: 360px;
+    overflow: hidden;
+    padding-bottom: 8px;
+
+    .people-section__worker-img {
+      width: 100%;
+    }
+  }
+
+  &__worker-name {
+    font-family: $main-font-family;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__worker-job {
+    padding-top: 4px;
+    font-family: $main-font-family;
+    text-align: center;
+    color: silver;
+  }
+}

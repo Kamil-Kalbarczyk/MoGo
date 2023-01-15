@@ -24,7 +24,7 @@
 
 .work-section {
   @include size-element;
-  padding: 20px 10px;
+  padding: 40px 10px 20px;
 
   &__services {
     display: grid;
@@ -62,6 +62,7 @@
       grid-area: description;
       font-family: $second-font-family;
       font-size: 12px;
+      color: silver;
     }
   }
 }

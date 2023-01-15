@@ -89,6 +89,10 @@
   text-transform: uppercase;
   color: #fff;
 }
+.nav__item-list .nav__item-hamburger {
+  display: none;
+  font-size: 24px;
+}
 .nav__link {
   padding-bottom: 4px;
   border-bottom: 3px solid transparent;
@@ -102,7 +106,22 @@
   border-bottom: 3px solid orange;
   color: orange;
 }
+.nav__link-hamburger {
+  color: #fff;
+  transition: 0.3s linear;
+}
+.nav__link-hamburger:hover {
+  color: orange;
+}
 
+@media (max-width: 760px) {
+  .nav__item {
+    display: none;
+  }
+  .nav__item-list .nav__item-hamburger {
+    display: block;
+  }
+}
 .clock {
   background: url("../icons/clock.svg");
 }

@@ -209,14 +209,56 @@
   gap: 20px;
 }
 .people-section__worker-img-container {
-  width: 360px;
+  width: 380px;
+  height: 470px;
   overflow: hidden;
-  padding-bottom: 8px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.3s linear;
 }
-.people-section__worker-img-container .people-section__worker-img {
+.people-section__worker-img-container:hover {
+  top: -8px;
+  left: -8px;
+  box-shadow: 8px 8px 0 #cef1ea;
+}
+.people-section__worker-img-container:hover .people-section__worker--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(242, 218, 138, 0.8) 0%, rgba(231, 129, 129, 0.8) 100%);
+  overflow: hidden;
+}
+.people-section__worker-img-container:hover .people-section__worker--hover .people-section__worker-contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 100%;
 }
+.people-section__worker-img-container:hover .people-section__worker--hover .people-section__worker-contact-container .people-section__worker-contact {
+  display: block;
+  margin: 0 1px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 21px;
+  background-color: rgb(242, 218, 138);
+  color: rgb(231, 129, 129);
+  transition: 0.3s;
+}
+.people-section__worker-img-container:hover .people-section__worker--hover .people-section__worker-contact-container .people-section__worker-contact:hover {
+  background-color: rgb(231, 129, 129);
+  color: white;
+}
+.people-section__worker-img-container .people-section__worker-img {
+  height: 100%;
+}
 .people-section__worker-name {
+  padding-top: 8px;
   font-family: "Montserrat-Bold", sans-serif;
   font-weight: bold;
   text-align: center;

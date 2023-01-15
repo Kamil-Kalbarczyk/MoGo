@@ -11,35 +11,22 @@
 
   &__workers-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
   }
 
   &__worker-img-container {
     width: 380px;
+    max-width: 95vw;
     height: 470px;
     overflow: hidden;
-    // padding-bottom: 8px;
     position: relative;
     top: 0;
     left: 0;
     transition: 0.3s linear;
 
-    // &:hover {
-    //   top: -8px;
-    //   left: -8px;
-    //   &::after {
-    //     display: block;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     content: "";
-    //     background: $background-gradient;
-    //     overflow: hidden;
-    //   }
-    // }
     &:hover {
       top: -8px;
       left: -8px;
@@ -78,6 +65,11 @@
             }
           }
         }
+      }
+      @media (max-width: $breakpoint-phone) {
+        top: 0;
+        left: 0;
+        box-shadow: none;
       }
     }
 

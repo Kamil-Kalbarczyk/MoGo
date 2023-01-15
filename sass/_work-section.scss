@@ -31,6 +31,17 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 380px));
     gap: 20px;
     padding-top: 20px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-desktop) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(1fr, 3);
+    }
+
+    @media (max-width: $breakpoint-small-desktop) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1fr, 6);
+    }
   }
 
   &__service {
@@ -40,7 +51,9 @@
     grid-template-areas:
       "icon title"
       "icon description";
+    justify-items: center;
     gap: 10px;
+    margin: 0 auto;
 
     &-icon {
       grid-area: icon;
@@ -53,6 +66,7 @@
 
     &-title {
       grid-area: title;
+      width: 100%;
       font-family: $main-font-family;
       font-size: 14px;
       text-transform: uppercase;
@@ -60,9 +74,18 @@
 
     &-description {
       grid-area: description;
+      width: 100%;
       font-family: $second-font-family;
       font-size: 12px;
       color: silver;
+    }
+
+    @media (max-width: $breakpoint-desktop) {
+      grid-template-columns: 52px minmax(200px, 420px);
+    }
+
+    @media (max-width: $breakpoint-small-desktop) {
+      grid-template-columns: 52px 320px;
     }
   }
 }

@@ -36,6 +36,10 @@
     text-indent: 10px;
     text-transform: capitalize;
     border: 1px solid silver;
+
+    &::placeholder {
+      color: silver;
+    }
   }
 
   &__sub-btn {
@@ -47,4 +51,20 @@
     text-transform: uppercase;
     cursor: pointer;
   }
+}
+
+@keyframes logo {
+  0% {
+    color: $second-color;
+  }
+  50% {
+    color: $main-color;
+  }
+  100% {
+    color: $second-color;
+  }
+}
+
+.animation-growing {
+  animation: logo 5s infinite;
 }

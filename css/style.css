@@ -340,6 +340,15 @@
   text-transform: capitalize;
   border: 1px solid silver;
 }
+.footer__input::-moz-placeholder {
+  color: silver;
+}
+.footer__input:-ms-input-placeholder {
+  color: silver;
+}
+.footer__input::placeholder {
+  color: silver;
+}
 .footer__sub-btn {
   height: 100%;
   padding: 0 10px;
@@ -348,4 +357,32 @@
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    color: rgb(231, 129, 129);
+  }
+  50% {
+    color: rgb(242, 218, 138);
+  }
+  100% {
+    color: rgb(231, 129, 129);
+  }
+}
+
+@keyframes logo {
+  0% {
+    color: rgb(231, 129, 129);
+  }
+  50% {
+    color: rgb(242, 218, 138);
+  }
+  100% {
+    color: rgb(231, 129, 129);
+  }
+}
+.animation-growing {
+  -webkit-animation: logo 5s infinite;
+          animation: logo 5s infinite;
 }/*# sourceMappingURL=style.css.map */

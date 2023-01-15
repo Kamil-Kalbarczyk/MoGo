@@ -1,0 +1,50 @@
+.footer {
+  @include size-element;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 10px 10px;
+  font-family: $main-font-family;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  &::before {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    height: 1px;
+    width: 100%;
+    background-color: silver;
+  }
+
+  &__name {
+    color: $second-color;
+    text-decoration: none;
+  }
+
+  &__form {
+    display: flex;
+    height: 100%;
+    min-height: 32px;
+  }
+
+  &__input {
+    height: 100%;
+    font-family: $main-font-family;
+    text-indent: 10px;
+    text-transform: capitalize;
+    border: 1px solid silver;
+  }
+
+  &__sub-btn {
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    background-color: $hover-shadow-color;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

@@ -220,7 +220,7 @@
 .people-section__worker-img-container:hover {
   top: -8px;
   left: -8px;
-  box-shadow: 8px 8px 0 #cef1ea;
+  box-shadow: 8px 8px 0 #95e1d3;
 }
 .people-section__worker-img-container:hover .people-section__worker--hover {
   position: absolute;
@@ -269,4 +269,52 @@
   font-family: "Montserrat-Bold", sans-serif;
   text-align: center;
   color: silver;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 10px 10px;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.footer::before {
+  display: block;
+  content: "";
+  margin-bottom: 10px;
+  height: 1px;
+  width: 100%;
+  background-color: silver;
+}
+.footer__name {
+  color: rgb(231, 129, 129);
+  text-decoration: none;
+}
+.footer__form {
+  display: flex;
+  height: 100%;
+  min-height: 32px;
+}
+.footer__input {
+  height: 100%;
+  font-family: "Montserrat-Bold", sans-serif;
+  text-indent: 10px;
+  text-transform: capitalize;
+  border: 1px solid silver;
+}
+.footer__sub-btn {
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  background-color: #95e1d3;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

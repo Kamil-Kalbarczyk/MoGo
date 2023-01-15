@@ -5,8 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   color: #fff;
+
+  &__container {
+    height: 100vh;
+    background-image: url("../img/eagle-header_background.jpg");
+    overflow: hidden;
+  }
+
+  &__content {
+    background: $background-gradient;
+    height: 100%;
+  }
 
   &__tittle-small {
     text-align: center;

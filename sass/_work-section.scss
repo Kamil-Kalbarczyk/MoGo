@@ -1,0 +1,67 @@
+.clock {
+  background: url("../icons/clock.svg");
+}
+
+.picture {
+  background: url("../icons/picture.svg");
+}
+
+.computer {
+  background: url("../icons/computer.svg");
+}
+
+.sheet {
+  background: url("../icons/sheet.svg");
+}
+
+.house {
+  background: url("../icons/house.svg");
+}
+
+.digital {
+  background: url("../icons/digital.svg");
+}
+
+.work-section {
+  @include size-element;
+  padding: 20px 10px;
+
+  &__services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 380px));
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  &__service {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "icon title"
+      "icon description";
+    gap: 10px;
+
+    &-icon {
+      grid-area: icon;
+      width: 52px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-origin: content-box;
+    }
+
+    &-title {
+      grid-area: title;
+      font-family: $main-font-family;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    &-description {
+      grid-area: description;
+      font-family: $second-font-family;
+      font-size: 12px;
+    }
+  }
+}

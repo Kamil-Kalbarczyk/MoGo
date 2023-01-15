@@ -1,0 +1,49 @@
+.header {
+  @include size-element();
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+
+  &__tittle-small {
+    text-align: center;
+    font-family: $tittle-small-font-family;
+    font-size: 32px;
+    font-weight: 100;
+  }
+
+  &__tittle-big {
+    text-align: center;
+    font-family: $tittle-big-font-family;
+    font-size: 112px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 120px;
+  }
+}
+
+.header {
+  &__button-container {
+    margin-top: 20px;
+  }
+
+  &__button {
+    padding: 10px 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid white;
+    font-family: $main-font-family;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: orange;
+      border-color: orange;
+    }
+  }
+}

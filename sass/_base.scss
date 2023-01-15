@@ -4,32 +4,13 @@
   box-sizing: border-box;
 }
 
-.container {
+.container__header {
   height: 100vh;
   background-image: url("../img/eagle-header_background.jpg");
+  overflow: hidden;
 }
 
-.container__header {
+.container__header-content {
   background: $background-gradient;
   height: 100%;
-
-  // position: relative;
-  // top: 0;
-  // left: 0;
-  // height: 100vh;
-  // background-image: url("../img/eagle-header_background.jpg");
-  // z-index: -10;
-
-  // &::before {
-  //   display: block;
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: $background-gradient;
-  //   opacity: 0.8;
-  //   z-index: -5;
-  // }
 }
